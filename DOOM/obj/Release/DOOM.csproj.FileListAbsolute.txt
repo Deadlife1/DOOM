@@ -1,0 +1,14 @@
+C:\Users\davit\source\repos\DOOM\DOOM\bin\Release\DOOM.exe.config
+C:\Users\davit\source\repos\DOOM\DOOM\bin\Release\DOOM.exe
+C:\Users\davit\source\repos\DOOM\DOOM\bin\Release\DOOM.pdb
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\MainWindow.g.cs
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\App.g.cs
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM_MarkupCompile.cache
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM_MarkupCompile.lref
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\MainWindow.baml
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.g.resources
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.Properties.Resources.resources
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.csproj.GenerateResource.cache
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.csproj.CoreCompileInputs.cache
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.exe
+C:\Users\davit\source\repos\DOOM\DOOM\obj\Release\DOOM.pdb

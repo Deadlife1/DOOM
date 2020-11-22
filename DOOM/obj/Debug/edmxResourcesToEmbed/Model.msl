@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ddimaksyanModelContainer" CdmEntityContainer="ddimaksyanEntities">
+    <EntitySetMapping Name="ACApplication">
+      <EntityTypeMapping TypeName="ddimaksyanModel.ACApplication">
+        <MappingFragment StoreEntitySet="ACApplication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ACApplicationCategory_ID" ColumnName="ACApplicationCategory_ID" />
+          <ScalarProperty Name="Developer" ColumnName="Developer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACApplicationCategory">
+      <EntityTypeMapping TypeName="ddimaksyanModel.ACApplicationCategory">
+        <MappingFragment StoreEntitySet="ACApplicationCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
