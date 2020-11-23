@@ -19,7 +19,14 @@ namespace DOOM
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
+    /// ACApplicationCategory ACApplication название 
     /// </summary>
+    /// Id int идентификатор
+    /// Title nvarchar(50)
+    /// ACApplicationCategory_ID int
+    /// перв ключ ACApplicationCategory id внеш ключ ACApplication ACApplicationCategory_ID
+    /// https:// github.com/ ViperisPRO/ DemoTest
+    /// UML это все что внутри таблицы 
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
 
@@ -100,6 +107,14 @@ namespace DOOM
         private void AddAppButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new AddApplicationPage());
+        }
+
+        private void MainListView_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            var item = (sender as ListView).SelectedItem as ACApplication;
+            Core.DB.ACApplication.Remove(item);
+            Core.DB.SaveChanges();
+            MessageBox.Show(item.Title + "Удален");
         }
     }
 }

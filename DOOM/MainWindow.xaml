@@ -42,7 +42,7 @@
         </StackPanel>
         <Frame NavigationUIVisibility="Automatic" x:Name="MainFrame" Grid.Column="2" Background="#FFC5C5C5" Grid.RowSpan="2"/>
         <ListView x:Name="MainListView" ItemsSource="{Binding MyElements}" SelectionChanged="MainListView_SelectionChanged"
-                  Grid.Column="1" Grid.RowSpan="2">
+                  Grid.Column="1" Grid.RowSpan="2" MouseRightButtonUp="MainListView_MouseRightButtonUp">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
