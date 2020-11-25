@@ -13,21 +13,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DOOM.Pages;
+using Demo3.Pages;
 
-namespace DOOM
+namespace Demo3
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// ACApplicationCategory ACApplication название 
-    /// </summary>
-    /// Id int идентификатор
-    /// Title nvarchar(50)
-    /// ACApplicationCategory_ID int
-    /// перв ключ ACApplicationCategory id внеш ключ ACApplication ACApplicationCategory_ID
-    /// https:// github.com/ ViperisPRO/ DemoTest
-    /// UML это все что внутри таблицы 
-    public partial class MainWindow : Window, INotifyPropertyChanged
+  
+    public partial class MainWindow : Window 
     {
 
 
@@ -39,8 +30,8 @@ namespace DOOM
             //подключение к бд
             
 
-            var apps = Core.DB.ACApplication.ToList();
-            _myElements = apps;
+           
+           
             this.DataContext = this;
 
             MainFrame.Navigate(new Pages.MainPage());
@@ -54,18 +45,13 @@ namespace DOOM
             MainFrame.Navigate(new Pages.ProfilePage());
         }
 
-        private List<ACApplication> _myElements = new List<ACApplication>();
-
-        public List<ACApplication> MyElements
-        {
-            get { return _myElements; }
-            set { _myElements = value; }
-        }
-
+        
+         
 
         private float _myNumberValue = 55;
+        private readonly object Demo3;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler Demo;
 
         public float MyNumberValue
         {
@@ -99,9 +85,8 @@ namespace DOOM
 
         private void MainListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var item = (sender as ListView).SelectedItem as ACApplication;
-            var appPage = new ApplicationPage(item);
-            MainFrame.Navigate(appPage);
+           
+          
         }
 
         private void AddAppButton_Click(object sender, RoutedEventArgs e)
@@ -111,10 +96,7 @@ namespace DOOM
 
         private void MainListView_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            var item = (sender as ListView).SelectedItem as ACApplication;
-            Core.DB.ACApplication.Remove(item);
-            Core.DB.SaveChanges();
-            MessageBox.Show(item.Title + "Удален");
+
         }
     }
 }

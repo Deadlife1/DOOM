@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DOOM.Pages
+namespace Demo3.Pages
 {
     /// <summary>
     /// Логика взаимодействия для MainPage.xaml

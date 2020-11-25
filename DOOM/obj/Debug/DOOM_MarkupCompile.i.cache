@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\davit\source\repos\DOOM\DOOM\obj\Debug\
+C:\Users\davit\source\repos\Demo3\DOOM\obj\Debug\
 DOOM
 none
 false
 DEBUG;TRACE
-C:\Users\davit\source\repos\DOOM\DOOM\App.xaml
+C:\Users\davit\source\repos\Demo3\DOOM\App.xaml
 61529463120
-2-1881755278
-171846894649
-18-1081352594
+
+121602983066
+18367532082
 MainWindow.xaml;Pages\AddApplicationPage.xaml;Pages\ApplicationPage.xaml;Pages\MainPage.xaml;Pages\ProfilePage .xaml;SettingsWindow.xaml;
 
-False
+True
 

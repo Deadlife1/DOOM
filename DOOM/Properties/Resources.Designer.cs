@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DOOM.Properties
+namespace Demo3.Properties
 {
 
 

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DOOM.Pages
+namespace Demo3.Pages
 {
     /// <summary>
     /// Логика взаимодействия для AddApplicationPage.xaml
@@ -23,14 +23,9 @@ namespace DOOM.Pages
         public AddApplicationPage()
         {
             InitializeComponent();
-            this.CurrentApplication = new ACApplication();
+           
             this.DataContext = this;
         }
-        public ACApplication CurrentApplication { get; set; }
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
-            Core.DB.ACApplication.Add(CurrentApplication);
-            Core.DB.SaveChanges();
+       
         }
     }
-}
